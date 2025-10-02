@@ -27,6 +27,7 @@ body::before{
     filter: blur(5px);
     z-index: -1;
 }
+/*contact section*/
 .contact-setion{
     position: relative;
     width: 400px;
@@ -38,6 +39,19 @@ body::before{
     margin-top: 10px;
     height: 550px; 
     transition: all 0.8s;
+    /*animation*/
+    animation: move 1s ease-in forwards;
+}
+/*Loading animation*/
+@keyframes move{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 /*heading*/
 .contact-setion h1{
@@ -114,6 +128,12 @@ textarea{
         width: 60%;
     }
 }
+
+}
+@media(max-width:400px){
+    .contact-section{
+        width: 50%;
+    }
 }
 /*
 .contact-form .input-box{
