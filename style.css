@@ -96,6 +96,25 @@ textarea{
     transition: all 0.3s ease;
 
 }
+.c-btn:hover{
+    background: #ecf0f1;
+    color: #e74c3c;
+}
+
+/*responsive*/
+@media (max-width:1400px){
+    body{
+        background-size: cover;
+     
+
+
+    }
+@media(max-width:1000px){
+    .contact-section{
+        width: 60%;
+    }
+}
+}
 /*
 .contact-form .input-box{
     position: relative;
